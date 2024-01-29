@@ -2,6 +2,16 @@ export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
 
+  nitro: {
+    azure: {
+      config: {
+        platform: {
+          apiRuntime: "node:18",
+        },
+      },
+    },
+  },
+
   plugins: [{ src: "~/plugins/msal.ts", mode: "client" }],
 
   modules: ["nuxt-headlessui"],
