@@ -1,6 +1,4 @@
 <template>
-    <LoginScreen />
+  <LoginScreen />
 </template>
-<script setup>
-</script>
-  
+<script setup></script>
