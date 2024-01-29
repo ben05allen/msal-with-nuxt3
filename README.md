@@ -2,11 +2,7 @@
 
 ## Demo 🔍
 
-
-
 https://github.com/Akash52/msal-with-nuxt3/assets/31063892/77e1351c-df21-4a91-bdd1-7cc53c387d81
-
-
 
 ## Features ✨
 
@@ -40,14 +36,12 @@ $ yarn add @azure/msal-browser
 
 ![IMG_2493](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/8d6de419-63d1-4453-8a1f-61bedf8c719d)
 
-
-   
 3. Register the application by giving your name, selecting supported account types (who can use this application) based on requirements, and clicking register.
 
 ![02](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/b12cb01b-2b12-401b-a45b-c6890c265373)
 
 4. Register redirect URL
-https://yourapplication.com/ or for development http://localhost:3000/
+   https://yourapplication.com/ or for development http://localhost:3000/
 
 Step 1 :
 ![04](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/5cb69b77-8a69-4125-ba4a-8d466deff058)
@@ -62,37 +56,35 @@ Step 3 :
 
 5. Copy the app's essential info, create an `.env` file at the root of your project and set the value of the below .env variables.
 
-
 ![IMG_2497](https://github.com/Akash52/msal-with-nuxt3/assets/31063892/7dbea54b-db0f-44e9-b774-c87e87121301)
 
-
-##### Refer to the image above to set the values for CLIENT and Tenet ID in the following ENV.
+##### Refer to the image above to set the values for Client and Tenant ID in the following ENV.
 
 ```
-CLIENTID=
-AUTHORITY=https://login.microsoftonline.com
+CLIENTID=[app client id]
+AUTHORITY=https://login.microsoftonline.com\[app tenent id]
 REDIRECT_URI=http://localhost:3000
 POSTLOGOUT_REDIRECT_URI=http://localhost:3000
 ```
 
 ### After Configure ENV
 
-#### Our Final step 
+#### Our Final step
 
 Run development server
+
 ```
 npm run dev
-````
+```
 
 #### Official documentation guide for Register an application with the Microsoft identity platform
 
 - [https://learn.microsoft.com/en-gb/azure/active-directory/develop/quickstart-register-app](https://learn.microsoft.com/en-gb/azure/active-directory/develop/quickstart-register-app)
 
-
 ### Repo Tree
 
 ```
-📦 
+📦
 ├─ .eslintrc.cjs
 ├─ .gitignore
 ├─ .npmrc

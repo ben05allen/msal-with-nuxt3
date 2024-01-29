@@ -1,5 +1,5 @@
-import {useMSAuth} from "~/composables/useMSAuth";
-import {useAppUser} from "#imports";
+import { useMSAuth } from "~/composables/useMSAuth";
+import { useAppUser } from "#imports";
 
 export default defineNuxtRouteMiddleware(async (to, from) => {
   if (process.server) return;
@@ -9,7 +9,7 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
   const accounts = msAuth.getAccounts();
   const userStore = useAppUser();
   const accessToken = await msAuth.acquireTokenSilent();
-  let isAuthenticated = msAuth.isAuthenticated() && accessToken;
+  const isAuthenticated = msAuth.isAuthenticated() && accessToken;
 
   if (isAuthenticated) {
     const user = {
